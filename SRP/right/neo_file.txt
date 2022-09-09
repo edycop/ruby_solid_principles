@@ -1,0 +1,7 @@
+
+    User information:
+    - Name: Thomas
+    - Surname: Anderson
+    - Age: 25
+    - Password: I_am_a_great_hacker
+    
