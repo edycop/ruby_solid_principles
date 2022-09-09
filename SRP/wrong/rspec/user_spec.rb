@@ -2,17 +2,16 @@
 
 require_relative '../user'
 require_relative '../rspec/factories/user'
-require_relative './rspec_helper'
 
 # This configuration avoid to write FactoryBot on each call to 'build'
 # or 'create' methods.
-#RSpec.configure do |config|
-  #config.include FactoryBot::Syntax::Methods
+RSpec.configure do |config|
+  config.include FactoryBot::Syntax::Methods
 
-  #config.before(:suite) do
-    #FactoryBot.find_definitions
-  #end
-#end
+  config.before(:suite) do
+    FactoryBot.find_definitions
+  end
+end
 
 RSpec.describe User do
   describe '#print_info' do
